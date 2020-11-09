@@ -1,17 +1,36 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDom from "react-dom";
+/*
+ ********************react-router-dom*******************
+ */
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+import App from "./reat-rout/modules/App";
+ReactDom.render(<App />, document.getElementById("root"));
+/*
+ **************redux*****************************
+ */
+// import store from "./store";
+// import { addToCart, updateCart, deleteFromCart } from "./rdx/actions/cartActions";
+// console.log("initialState", store.getState());
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// let unsubscribe = store.subscribe(() => console.log(store.getState()));
+
+// store.dispatch(addToCart("coffee 500gm", 1, 250));
+// store.dispatch(addToCart("flour 100g", 1, 250));
+// store.dispatch(addToCart("juice 2L", 1, 250));
+// store.dispatch(updateCart("flour 100g", 100, 250));
+// store.dispatch(deleteFromCart("coffee 500gm", 1, 250));
+// unsubscribe();
+
+/*
+ *****************react-redux******************
+ */
+// import store from "./store";
+// import { Provider } from "react-redux";
+// import App from './reat-rdx/containerComponents/index'
+// ReactDom.render(
+//   <Provider store={store}>
+//     <App/>
+//   </Provider>,
+//   document.getElementById("root")
+// );
